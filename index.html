@@ -3,7 +3,7 @@
   <head>
     <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
     <form id="login-form" class="hidden">
@@ -17,13 +17,19 @@
     </form>
     <h2 id="clock">00:00:00</h2>
     <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="write a todo and press enter" />
+    </form>
+    <ul id="todo-list"></ul>
     <div id="quote">
       <span></span>
       <span></span>
     </div>
-    <script src="src/greeting.js"></script>
-    <script src="src/clock.js"></script>
-    <script src="src/quotes.js"></script>
-    <script src="src/background.js"></script>
+    <script src="src/js/greeting.js"></script>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/quotes.js"></script>
+    <script src="src/js/background.js"></script>
+    <script src="src/js/todo.js"></script>
+    <script src="src/js/weather.js"></script>
   </body>
 </html>
