@@ -1,3 +1,116 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(247, 247, 247);
+}
+
+#clock {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form > h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+#input-name {
+  display: block;
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid white;
+  text-align: center;
+  color: rgb(247, 247, 247);
+  font-size: 1.5rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+#input-name:focus {
+  outline: none;
+}
+
+#input-btn {
+  display: block;
+  width: 5rem;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
 .hidden {
   display: none;
+}
+
+#section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#greeting {
+  font-size: 2rem;
+}
+
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-form > h2 {
+  margin-top: 2rem;
+}
+
+#todo-btn {
+  width: 100%;
+  margin: 0.5rem 0;
+  background: none;
+  color: white;
+  border: none;
+  text-align: center;
+  border-bottom: 0.1rem solid white;
+}
+
+#todo-btn:focus {
+  outline: none;
+}
+
+li > button {
+  background: none;
+  border: none;
+  margin-left: 0.3rem;
+  font-size: 0.3rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  align-items: end;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+#quote {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+#weather {
+  font-size: 0.7rem;
 }

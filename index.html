@@ -3,32 +3,38 @@
   <head>
     <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name?"
-      />
-      <input type="submit" value="Log In" />
+    <h2 id="clock">00:00</h2>
+    <form id="login-form">
+      <h2>Hello, what's your name?</h2>
+      <input id="input-name" required maxlength="15" type="text" />
+      <input id="input-btn" type="submit" value="Log In" />
     </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="write a todo and press enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+    <div id="section" class="hidden">
+      <h1 id="greeting"></h1>
+      <form id="todo-form">
+        <h2>What is your main focus for today?</h2>
+        <input id="todo-btn" type="text" />
+      </form>
+      <ul id="todo-list"></ul>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+
+    <div class="footer">
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div></div>
     </div>
+
     <script src="src/js/greeting.js"></script>
     <script src="src/js/clock.js"></script>
     <script src="src/js/quotes.js"></script>
